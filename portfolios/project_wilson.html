@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hayden's Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <!-- Update these with your own fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet"> 
+        
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="imgs/logo.png" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#services" class="nav__link">What I Do</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About Me</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+
+        <section class="intro">
+            <h1 class="section__title section__title--intro">
+                Project <strong>WILSON</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Built an Autonomous Research Buoy</p>
+            <img src="imgs/wilson.png" alt="" class="portfolio__intro__img">
+            <a href="https://projectwilson2020.wixsite.com/mysite" alt="Project Wilson Website">Project Wilson Website</a>
+
+        </section>
+        
+        
+        <div class="portfolio-item-individual">
+            <p>
+                Wilson is a drifting buoy powered by the sun. Wilson's brain is an Arduino computer. 
+                Its senses are an array of instruments: an air temperature sensor, a water temperature sensor, 
+                a barometer, a hydrometer (to measure relative humidity), and a GPS receiver (for location).
+            </p>
+            <p>
+                Wilson gathers information about its environment and transmits it to Mission Control 
+                (San Francisco, California) via satellite every 12 hours.
+            </p>
+            <p>
+                It's named after Wilson the Volleyball from the movie "Cast Away", was inspired by the MD Buoy Project., 
+                and was built in San Francisco, California.
+            </p>
+            <img src="imgs/wilson4.png" alt="Pic">
+            <img src="imgs/wilson2.png" alt="Pic">
+            <img src="imgs/wilson3.png" alt="Pic">
+        </div>
+        
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- replace with your own email address -->
+            <a href="mailto:hayden.michael.brophy@gmail.com" class="footer__link">hayden.michael.brophy@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a target="_blank" class="social-list__link" href="https://www.linkedin.com/in/hayden-brophy-b7b333206/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li  class="social-list__item">
+                    <a target="_blank" class="social-list__link" href="http://dribbble.com">
+                        <i class="fab fa-dribbble"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a target="_blank" class="social-list__link" href="https://twitter.com">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a target="_blank" class="social-list__link" href="https://github.com">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        
+        
+        <script src="index.js"></script>
+        
+    </body>
+</html>
