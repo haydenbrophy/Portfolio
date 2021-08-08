@@ -38,9 +38,9 @@
 /* General styles */
 
 /* endable this to add smooth scrolling */
-/* html {
+html {
     scroll-behavior: smooth;
-} */
+} 
 
 
 body {
@@ -397,12 +397,22 @@ header {
 /*  My services section  */
 
 .my-services {
-    background-color:#2b2b2b;
+    background-color: #A9A9A9;
     background-image: url('imgs/falcon.gif');
     background-size: cover;
     background-blend-mode: multiply;
     color: var(--clr-accent);   
     text-align: center;
+
+    -webkit-transition: background-color 1s;
+    -moz-transition:    background-color 1s;
+    -ms-transition:     background-color 1s;
+    -o-transition:      background-color 1s;
+    transition:         background-color 1s;
+}
+
+.my-services:hover{
+    background-color: #191919;
 }
 
 .section__title--services {
@@ -593,6 +603,8 @@ header {
     height: 100vh;
     background-color: #161616;
     transition: 1s;
+    display: inline-block;
+    white-space: nowrap;
 }
 
 .Slogo-header {
