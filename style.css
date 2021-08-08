@@ -187,6 +187,7 @@ header {
     padding: 0;
 }
 
+/*
 .nav__link {
     color: inherit;
     font-weight: var(--fw-bold);
@@ -195,7 +196,81 @@ header {
 }
 
 .nav__link:hover {
-    color: var(--clr-accent);
+    color: var(--clr-accent);   
+}
+*/
+
+.thx{
+    position: fixed;
+    left:50%;
+    transform:translateX(-50%);
+    bottom: 15px;
+  }
+  .nav__link{
+    color: inherit;
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-h2);
+    text-decoration: none;
+    text-transform:uppercase;
+    text-decoration:none;
+    margin:0 15px;
+    position:relative;
+    display:inline-block;
+  }
+
+.nav__link:before{
+    content:'';
+    position: absolute;
+    width: 120%;
+    height: 10px;
+    background: #ffffff;
+    top:45%;
+    animation:out 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
+}
+
+.nav__link:hover:before{
+    animation:in 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
+}
+
+@keyframes in{
+  0%{
+    width: 0;
+    left:0;
+    right:auto;
+  }
+  100%{
+    left: -10%;
+    right:auto;
+    width: 120%;
+  }
+}
+@keyframes out{
+  0%{
+    width:120%;
+    left: -10%;
+    right: 0;
+  }
+  100%{
+    width: 0;
+    left: auto;
+    right: 0;
+  }
+}
+@keyframes show{
+  0%{
+    opacity:0;
+    transform:translateY(-10px);
+  }
+  100%{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+@for $i from 1 through 5 {
+  .nav__link:nth-child(#{$i}){
+    animation:show .2s #{$i*0.1+1}s ease 1 both;
+  }
 }
 
 .nav-toggle {
@@ -243,8 +318,8 @@ header {
 .hamburger::before,
 .hamburger::after {
     background: var(--clr-accent);
-    width: 2em;
-    height: 3px;
+    width: 3em;
+    height: 4px;
     border-radius: 1em;
     transition: transform 250ms ease-in-out;
 }
@@ -258,8 +333,8 @@ header {
     right: 0;
 }
 
-.hamburger::before { top: 6px; }
-.hamburger::after { bottom: 6px; }
+.hamburger::before { top: 12px; }
+.hamburger::after { bottom: 12px; }
 
 
 /*  Intro section  */

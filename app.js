@@ -22,7 +22,7 @@ window.addEventListener('DOMContentLoaded', ()=>{
                     span.classList.add('fade');
                 }, (idx + 1) * 400)
             })
-        },2000)
+        },1700)
 
         setTimeout(()=>{
             intro.style.top = '-100vh';
