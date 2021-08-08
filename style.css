@@ -68,6 +68,16 @@ strong { font-weight: var(--fw-bold) }
     outline-offset: 3px;
 }
 
+.splash-page {
+    position: absolute;
+    z-index: 9;
+}
+
+.main-page {
+    position: absolute;
+    z-index: 1;
+}
+
 /* Buttons */
 
 .btn {
@@ -495,4 +505,44 @@ header {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* SPASH SCREEN */
+
+.Sintro {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #161616;
+    transition: 1s;
+}
+
+.Slogo-header {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+}
+
+.Slogo{
+    position: relative;
+    display: inline-block;
+    bottom: -20px;
+    opacity: 0;
+}
+
+.Slogo.active {
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+}
+
+.Slogo.fade {
+    bottom: 150px;
+    opacity: 0;
+    transition: ease-in-out 0.5s;
 }
