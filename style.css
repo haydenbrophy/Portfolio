@@ -15,7 +15,8 @@
     
     --clr-light: #fff;
     --clr-dark: #303030;
-    --clr-accent: #16e0bd;
+    --clr-accent:#ffcc00;
+    ;
     
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -165,7 +166,7 @@ header {
 .nav {
     position: fixed;
     background: var(--clr-dark);
-    color: var(--clr-light);
+    color: var(--clr-accent);
     top: 0;
     bottom: 0;
     left: 0;
@@ -223,7 +224,7 @@ header {
     position: absolute;
     width: 120%;
     height: 10px;
-    background: #ffffff;
+    background: var(--clr-accent);
     top:45%;
     animation:out 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
 }
@@ -535,7 +536,9 @@ header {
 /* footer */
 
 .footer {
-    background: #111;
+    background-color: var(--clr-dark);
+    background-image: url('imgs/image2.jpeg');
+    background-blend-mode: multiply;
     color: var(--clr-accent);
     text-align: center;
     padding: 2.5em 0;
